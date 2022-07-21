@@ -1,12 +1,13 @@
 /* fonts */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
 
-/* Top Banner styles */
 
 body {
     font-family: 'Poppins', sans-serif;
     background-color: whitesmoke;
 }
+
+/* Top Banner styles */
 
 .container {
     background-color: #1E1E1E;
@@ -42,7 +43,6 @@ body {
 .banner-para {
     font-size: 15px;
     color: #a4a3a3;
-    margin: 0;
     padding-left: 80px;
 }
 
@@ -234,7 +234,7 @@ hr {
 @media only screen and (max-width:688px) {
 
     .container {
-        width: 75%;
+        width: 100%;
         height: auto;
 
     }
@@ -268,7 +268,11 @@ hr {
     .watch-button {
         display: flex;
         align-items: center;
-        width: 40%;
+        width: 50%;
+    }
+
+    .watch-button a {
+        font-size: 5px;
     }
 
     .banner-image {
@@ -281,7 +285,7 @@ hr {
         display: grid;
         align-items: center;
         height: auto;
-        margin-bottom: 3000px;
+        margin-bottom: 3500px;
         margin-left: 50px;
     }
 
@@ -308,6 +312,7 @@ hr {
         grid-template-columns: repeat(1, 1fr);
         background-color: #161616;
         text-align: center;
+        padding-right: 50px;
     }
 
     hr {
