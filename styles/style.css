@@ -8,21 +8,26 @@ body {
     background-color: whitesmoke;
 }
 
-.banner {
+.container {
     background-color: #1E1E1E;
     color: #ffffff;
     Width: 1200px;
     Height: 650px;
-    display: flex;
     border-radius: 30px;
     margin: 50px 90px 100px 70px;
 }
 
-.banner:hover {
+
+.container:hover {
     background-image: linear-gradient(#36539c, #2f2f02);
     border: 2px solid #ff0000de;
 }
 
+.banner {
+
+    display: flex;
+
+}
 
 .heading {
     width: 50%;
@@ -73,6 +78,8 @@ body {
 
 .blog-container {
     display: flex;
+    margin-top: 100px;
+    margin-right: 50px;
     margin-bottom: 900px;
 }
 
@@ -207,7 +214,7 @@ footer {
 }
 
 hr {
-    margin: 80px 150px 30px 150px;
+    margin: 80px 30px 30px 30px;
 }
 
 .footer-body {
@@ -226,9 +233,13 @@ hr {
 
 @media only screen and (max-width:688px) {
 
-    .banner {
-        width: 100%;
+    .container {
+        width: 75%;
         height: auto;
+
+    }
+
+    .banner {
         flex-direction: column;
         align-items: center;
     }
@@ -244,19 +255,25 @@ hr {
         text-align: center;
         font-size: 40px;
         font-weight: 700;
-        margin: 0 50px 10px 10px;
+        margin: 0 50px 10px 30px;
     }
 
     .banner-para {
         text-align: center;
         font-size: 12px;
         color: #a4a3a3;
-        margin: 5px 120px 10px 0;
+        margin: 5px 80px 10px 0;
+    }
+
+    .watch-button {
+        display: flex;
+        align-items: center;
+        width: 40%;
     }
 
     .banner-image {
         width: 100%;
-        margin: 50px 0 0 0;
+        margin: 20px 0 0 0;
         align-items: center;
     }
 
@@ -264,7 +281,8 @@ hr {
         display: grid;
         align-items: center;
         height: auto;
-        margin-bottom: 3500px;
+        margin-bottom: 3000px;
+        margin-left: 50px;
     }
 
     .button {
@@ -292,7 +310,9 @@ hr {
         text-align: center;
     }
 
-    hr {}
+    hr {
+        padding-right: 65%;
+    }
 
     .footer-body {
         width: 100%;
